@@ -1,2 +1,2 @@
-# nya-rgs
+# nya~rgs
 nya~rgs esolang interpreter + examples
