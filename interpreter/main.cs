@@ -46,7 +46,7 @@ class Program {
     int j = 0;
     string temp = "";
     for(i = 0; i < code.Length; i++){
-      string line = code[i];
+      string line = "  "+code[i];
       for(j = 0; j < line.Length; j++){
         char c = line[j];
         if(c == '_') { j = 99999; i = 99999; break; }
