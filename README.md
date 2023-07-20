@@ -1,26 +1,2 @@
 # nya-rgs
 nya~rgs esolang interpreter + examples
-
-
-Commands:
-   @ Print Held Memory as string. e.g. @0. prints address 0
-   ~ Clear Held Memory e.g. ~0. for pos 0 or ~*. for all
-   | Goto Line:Pos unconditionally e.g. |3:3.
-   ; Input into Memory at pos e.g. ;3.
-   ' Load string into memory e.g. '0:Hello World. will load hello world in position 0
-   ^ Load int into memory e.g. ^0:1 will load 1 into position 0
-   ? Goto Line:Pos if Memory == value e.g. ?5:0:99:4. will go to line 5 character 0 if memory address 99 is 4
-   ?> will compare memory1 to memory2 instead of memory and value so ?>0:0:1:2 will go to the start if memory address 1 and 2 are equal
-   + Incriment address e.g. +5:1. adds 1 to address 5
-   - Decrement address
-   * Multiply address. *5:2. multiplies address 5 by 2
-   / Divide address
-   arithematic operator followed by > will work as follows operator>address1:address2 e.g. +>1:2 will add addresses 1 and 2 and put it into address 1
-   _ Halt
-   . End command
-   & Convert address to int e.g. &0. on failure will crash
-   % Convert address to string e.g. %0. on failure will crash
-   ! Convert address to character
-   = Join addresses together and stores in the first address e.g. =0:1 when address 0 is 'c' and address 1 is 'a' it will set address 0 to 'ca'
-   > Compares two addresses in size and sets the third one to the result e.g. >0:2:3 checks if address 0 is bigger than address 2 and stores it in address 3
-   < Waits a certain number of ms e.g. <50. waits 50 ms (0.05s)
